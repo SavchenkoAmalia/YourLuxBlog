@@ -1,0 +1,51 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "First Blog",
+      "author": "Yehor",
+      "date": "30/04/2025",
+      "article": {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo modi nulla alias beatae. Omnis commodi vitae adipisci qui repellat sed, molestiae dolorum doloribus in? Praesentium, veniam qui, consequuntur aliquid eum minima, ipsum maiores natus debitis accusantium repellat numquam sequi.",
+        "comments": [
+          {
+            "avatar": "https://placehold.co/400",
+            "userName": "Tom",
+            "date": "30/04/2025",
+            "country": "Poland",
+            "mainText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem porro nam, nesciunt molestias vero."
+          }
+        ]
+      }
+    },
+    {
+      "id": "6db6",
+      "title": "ewfsfsres",
+      "author": "dswew",
+      "text": "dfewrew",
+      "article": {
+        "text": "dfewrew"
+      }
+    },
+    {
+      "id": "4244",
+      "title": "sdasa",
+      "author": "asdasx",
+      "text": "asdfascsd",
+      "date": 1746640535751,
+      "article": {
+        "text": "asdfascsd"
+      }
+    },
+    {
+      "id": "953b",
+      "title": "dsfsda",
+      "author": "dsfsf",
+      "text": "sdfsdfsd",
+      "date": "2025-05-07T17:56:32.914Z",
+      "article": {
+        "text": "sdfsdfsd"
+      }
+    }
+  ]
+}
