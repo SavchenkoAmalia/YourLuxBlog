@@ -16,4 +16,3 @@ form.addEventListener("submit", (event) => {
     createPost(postData);
 });
 
-

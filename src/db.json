@@ -1,7 +1,7 @@
 {
   "blogs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "First Blog",
       "author": "Yehor",
       "date": "30/04/2025",
@@ -53,6 +53,36 @@
       "author": "efer",
       "text": "dfses",
       "date": "2025-05-07T18:00:06.370Z",
+      "article": {
+        "text": "dfses"
+      }
+    },
+    {
+      "id": "3a28",
+      "title": "regfrg",
+      "author": "efer",
+      "text": "dfses",
+      "date": "2025-05-09T16:31:12.811Z",
+      "article": {
+        "text": "dfses"
+      }
+    },
+    {
+      "id": "4524",
+      "title": "regfrg",
+      "author": "efer",
+      "text": "dfses",
+      "date": "2025-05-09T16:31:16.954Z",
+      "article": {
+        "text": "dfses"
+      }
+    },
+    {
+      "id": "6cbf",
+      "title": "4t5tr",
+      "author": "dfgd",
+      "text": "dfses",
+      "date": "2025-05-09T16:59:21.514Z",
       "article": {
         "text": "dfses"
       }
