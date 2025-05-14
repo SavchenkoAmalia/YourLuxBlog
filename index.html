@@ -56,6 +56,9 @@
               placeholder="Введіть автора"
             />
 
+            <label for="date">Дата</label>
+            <input class="form__input" id="date" type="number" />
+
             <label for="mainContent">Контент</label>
             <input
               class="form__input"
@@ -84,14 +87,21 @@
         <div class="base-home__container container">
           <h1 class="base-home__title">рецепти</h1>
           <ul class="blogList"></ul>
-          <button onclick="window.location.href='#section3'" class="base-home__button">всі рецепти</button>
+          <button
+            onclick="window.location.href='#section3'"
+            class="base-home__button"
+          >
+            всі рецепти
+          </button>
         </div>
       </div>
 
-      <div id="section3" style="display: none;" class="home__all all-home">
+      <div id="section3" style="display: none" class="home__all all-home">
         <div class="all-home__container container">
           <form class="all-home__form" action="#">
-            <label class="all-home__label" for="userInput">шукати рецепт за ключовими словами​</label>
+            <label class="all-home__label" for="userInput"
+              >шукати рецепт за ключовими словами​</label
+            >
             <input
               class="all-home__input"
               type="text"
@@ -104,7 +114,7 @@
           </form>
           <div class="all-home__homes">
             <h1 class="all-home__title">всі рецепти</h1>
-          <button class="all-home__back">повернутися назад</button>
+            <button class="all-home__back">повернутися назад</button>
           </div>
           <ul class="blogList"></ul>
         </div>

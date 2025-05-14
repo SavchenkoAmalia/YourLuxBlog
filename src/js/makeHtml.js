@@ -7,6 +7,7 @@ export function makehtml(data){
                 <p>${item.author}</p>
                 <p>${item.date}</p>
                 <p>${item.article.text}</p>
+                <a>${item.link}</a>
                 <button id"${item.id}" class="updatePost-button">ОНОВИТИ</button>
                 <button id"${item.id}" class="deletePost-button">ВИДАЛИТИ</button>
             </li>`;
