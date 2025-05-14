@@ -1,0 +1,39 @@
+@import url(/scss/base/variables.scss);
+
+.home__base {
+  .base-home {
+    &__container {
+      background-color: #423b33;
+      padding: 20px 70px 20px 70px;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+
+      .base-home__title {
+        font-size: 36px;
+        color: white;
+        font-family: $mainFontFamily;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .base-home__blogList {
+      }
+
+      .base-home__button {
+        display: inline-flex;
+        margin: 0 auto 0 auto;
+        margin-top: auto;
+        background-color: #423b33;
+        padding: 10px 30px;
+        gap: 25px;
+        border-radius: 38px;
+        font-family: $mainFontFamily;
+        font-weight: 700;
+        color: #af8461;
+        border: 2px solid #af8461;
+        font-size: 16px;
+      }
+    }
+  }
+}

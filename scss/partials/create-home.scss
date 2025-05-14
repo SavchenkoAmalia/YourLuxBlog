@@ -1,0 +1,56 @@
+@import url(/scss/base/variables.scss);
+
+.home__create {
+  .create-home {
+    &__container {
+      background-image: url("//images03.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/57ead75a6921568d908cc1ce/pexelsphoto1565982.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-height: 780px;
+      max-width: 1400px;
+      padding: 70px;
+
+      .create-home__title {
+        font-size: 96px;
+        max-width: 650px;
+        color: #fbf64c;
+        font-family: $mainFontFamily;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-shadow: -1px -1px 0 black;
+      }
+
+      .create-home__text {
+        max-width: 400px;
+        color: white;
+        font-family: $mainFontFamily;
+        font-weight: 200;
+        font-size: 24px;
+        margin-bottom: 100px;
+      }
+
+      .create-home__buttons {
+        .create-home__add {
+          background-color: #af8461;
+          padding: 20px 50px;
+          gap: 25px;
+          border-radius: 38px;
+          font-family: $mainFontFamily;
+          font-weight: 300;
+          color: white;
+          margin-right: 25px;
+        }
+
+        .create-home__all {
+          background-color: #af8461;
+          padding: 20px 50px;
+          gap: 25px;
+          border-radius: 38px;
+          font-family: $mainFontFamily;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import url(/scss/base/variables.scss);
+
+
+.header {
+  &-container {
+    background-color:#2f2c2c;
+    padding: 25px;
+  }
+
+  &-logo {
+    color: aliceblue;
+    font-size: 48;
+    font-family: $mainFamilyFont;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,88 @@
+@import url(/scss/base/variables.scss);
+
+.home__all {
+  .all-home {
+    &__container {
+      background-color: #423b33;
+      padding: 0px 70px 70px 70px;
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+
+    .all-home__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; 
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all-home__label {
+  font-size: 16px;
+  color: white;
+  font-family: $mainFontFamily;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.all-home__input {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+button {
+  background-color: #af8461;
+  padding: 15px 30px;
+  border-radius: 27px;
+  font-family: $mainFontFamily;
+  font-weight: 300;
+  color: white;
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.all-home__homes {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.all-home__title {
+  font-size: 24px;
+  color: white;
+  font-family: $mainFontFamily;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.all-home__back {
+  background-color: #423b33;
+  padding: 10px 30px;
+  gap: 25px;
+  border-radius: 38px;
+  font-family: $mainFontFamily;
+  font-weight: 700;
+  color: #af8461;
+  border: 2px solid #af8461;
+  font-size: 16px;
+  max-width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+      .blogList {
+      }
+    }
+  }
+}

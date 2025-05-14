@@ -1,0 +1,14 @@
+//!Base
+@import "./base/reset";
+@import "./base/variables";
+
+//!Components
+@import "./components/footer";
+@import "./components/header";
+
+
+//!Partials
+@import "./partials/create-home";
+@import "./partials/base-home";
+@import "./partials/modal";
+@import "./partials/all-home";
