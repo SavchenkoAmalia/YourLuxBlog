@@ -9,8 +9,8 @@ export function makehtml(data){
                 <p class="form-article">${item.article.text}</p>
                 <a class="form-link">${item.link}</a>
                 <div class="buttons-container">
-                <button id"${item.id}" class="updatePost-button">ОНОВИТИ</button>
-                <button id"${item.id}" class="deletePost-button">ВИДАЛИТИ</button>
+                <button id="${item.id}" class="updatePost-button">ОНОВИТИ</button>
+                <button class="delete" id="${item.id}">ВИДАЛИТИ</button>
                 </div>
             </li>`;
         }).join(" ");

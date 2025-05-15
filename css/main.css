@@ -524,7 +524,7 @@ legend {
   text-decoration: underline;
 }
 .form-items .updatePost-button,
-.form-items .deletePost-button {
+.form-items .delete {
   padding: 10px 18px;
   border: none;
   border-radius: 6px;
@@ -542,11 +542,11 @@ legend {
 .form-items .updatePost-button:hover {
   background-color: #a47a57;
 }
-.form-items .deletePost-button {
+.form-items .delete {
   background-color: #e74c3c;
   color: #fff;
 }
-.form-items .deletePost-button:hover {
+.form-items .delete:hover {
   background-color: #c0392b;
 }
 .form-items .buttons-container {

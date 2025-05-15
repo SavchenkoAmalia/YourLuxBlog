@@ -114,7 +114,6 @@ function createPost(imageSrc, title, author, mainContent, link) {
   imageInput.removeAttribute("data-image");
   alert('Рецепт успішно створено!Щоб переглянути натисніть "нові рецепти"');
 }
-
 //! buttons
 
 const button1 = document.querySelector('.base-home__button');

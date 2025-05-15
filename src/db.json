@@ -1,21 +1,113 @@
 {
   "blogs": [
     {
-      "id": "1",
-      "title": "First Blog",
-      "author": "Yehor",
-      "date": "30/04/2025",
+      "id": "ea05",
+      "title": "wqd",
+      "author": "qwsq",
+      "text": "qwwsadfghjmhgfdsaAsdfcsxzAsx",
+      "date": "2025-05-15T17:39:03.297Z",
       "article": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo modi nulla alias beatae. Omnis commodi vitae adipisci qui repellat sed, molestiae dolorum doloribus in? Praesentium, veniam qui, consequuntur aliquid eum minima, ipsum maiores natus debitis accusantium repellat numquam sequi.",
-        "comments": [
-          {
-            "avatar": "https://placehold.co/400",
-            "userName": "Tom",
-            "date": "30/04/2025",
-            "country": "Poland",
-            "mainText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem porro nam, nesciunt molestias vero."
-          }
-        ]
+        "text": "qwwsadfghjmhgfdsaAsdfcsxzAsx"
+      }
+    },
+    {
+      "id": "2683",
+      "title": "sdfggds",
+      "author": "sdfghjkjhgf",
+      "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd",
+      "date": "2025-05-15T17:43:01.345Z",
+      "article": {
+        "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd"
+      }
+    },
+    {
+      "id": "285a",
+      "title": "sdfggds",
+      "author": "sdfghjkjhgf",
+      "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd",
+      "date": "2025-05-15T17:43:02.381Z",
+      "article": {
+        "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd"
+      }
+    },
+    {
+      "id": "78de",
+      "title": "sdfggds",
+      "author": "sdfghjkjhgf",
+      "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd",
+      "date": "2025-05-15T17:43:04.039Z",
+      "article": {
+        "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd"
+      }
+    },
+    {
+      "id": "01b6",
+      "title": "sdfggds",
+      "author": "sdfghjkjhgf",
+      "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd",
+      "date": "2025-05-15T17:43:04.463Z",
+      "article": {
+        "text": "sdfghjkl;lkjhgfdsdtyu;lkjhgfd"
+      }
+    },
+    {
+      "id": "cc47",
+      "title": "",
+      "author": "",
+      "text": "",
+      "date": "2025-05-15T17:52:42.871Z",
+      "article": {
+        "text": ""
+      }
+    },
+    {
+      "id": "61ba",
+      "title": "sdfds",
+      "author": "sdfghjhgfdsa",
+      "text": "sdsdssdfgbhgfdsasdfgbnbgfds",
+      "date": "2025-05-15T17:55:43.731Z",
+      "article": {
+        "text": "sdsdssdfgbhgfdsasdfgbnbgfds"
+      }
+    },
+    {
+      "id": "82ee",
+      "title": "sdfds",
+      "author": "sdfghjhgfdsa",
+      "text": "sdsdssdfgbhgfdsasdfgbnbgfds",
+      "date": "2025-05-15T17:55:44.845Z",
+      "article": {
+        "text": "sdsdssdfgbhgfdsasdfgbnbgfds"
+      }
+    },
+    {
+      "id": "b399",
+      "title": "sdfds",
+      "author": "sdfghjhgfdsa",
+      "text": "sdsdssdfgbhgfdsasdfgbnbgfds",
+      "date": "2025-05-15T17:55:45.489Z",
+      "article": {
+        "text": "sdsdssdfgbhgfdsasdfgbnbgfds"
+      }
+    },
+    {
+      "id": "b5f9",
+      "title": "sdfghjgfdsa",
+      "author": "sdfds",
+      "text": "sdfghjhygtreswaertyjhgytfdres",
+      "date": "2025-05-15T17:56:45.163Z",
+      "article": {
+        "text": "sdfghjhygtreswaertyjhgytfdres"
+      }
+    },
+    {
+      "id": "9f91",
+      "title": "sdfghjgfdsa",
+      "author": "sdfds",
+      "text": "sdfghjhygtreswaertyjhgytfdres",
+      "date": "2025-05-15T17:56:45.814Z",
+      "article": {
+        "text": "sdfghjhygtreswaertyjhgytfdres"
       }
     }
   ]
