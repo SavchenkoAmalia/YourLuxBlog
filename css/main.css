@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /* Reset and base styles */
-@import url("@import url(https://fonts.googleapis.com/css?family=Oswald:200,regular,600,700=swap");
-@import url("@import url(https://fonts.googleapis.com/css?family=Noto+Serif+Georgian:regular=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,regular,600,700=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+Georgian:regular=swap");
 @import url(/scss/base/variables.scss);
 @import url(/scss/base/variables.scss);
 @import url(/scss/base/variables.scss);
@@ -249,6 +250,8 @@ legend {
   display: flex;
   flex-direction: column;
   height: 300px;
+  height: auto;
+  overflow: visible;
 }
 .home__base .base-home__container .base-home__title {
   font-size: 36px;
@@ -283,6 +286,7 @@ legend {
   align-items: center;
   z-index: 9999;
   display: none;
+  overflow-y: auto; /* Додаємо можливість скролу */
 }
 .create-home__modal .create-home__window {
   position: relative;
@@ -291,7 +295,9 @@ legend {
   background: white;
   border-radius: 10px;
   padding: 20px;
-  padding: 30px;
+  max-height: 90vh; /* Обмеження висоти модалки */
+  overflow-y: auto; /* Можливість скролити контент всередині */
+  box-sizing: border-box;
 }
 .create-home__modal .create-home__overlay {
   position: absolute;
@@ -323,24 +329,42 @@ legend {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 30px;
+  padding: 20px;
   background-color: #f4f4f4;
   border-radius: 12px;
   max-width: 500px;
   margin: 0 auto;
+  font-family: Arial, sans-serif;
 }
 .form label {
   font-weight: 600;
   color: #333;
+  font-size: 14px;
 }
 .form .form__input {
   padding: 10px 15px;
   border: 2px solid #ccc;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   transition: border-color 0.3s;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
 .form .form__input:focus {
+  border-color: #af8461;
+  outline: none;
+}
+.form .form__textarea {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: vertical; /* Дозволяє змінювати висоту */
+  transition: border-color 0.3s;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+.form .form__textarea:focus {
   border-color: #af8461;
   outline: none;
 }
@@ -354,6 +378,7 @@ legend {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 15px;
 }
 .form button[type=submit]:hover {
   background-color: #8a674c;
@@ -429,4 +454,103 @@ legend {
   max-width: 200px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.blogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.form-items {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  position: relative;
+}
+.form-items:hover {
+  transform: translateY(-2px);
+}
+.form-items .form-img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.form-items .form-title {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.form-items .form-author {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 12px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+.form-items .form-article {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-family: "Noto+Serif+Georgian", serif;
+  font-weight: 300;
+}
+.form-items .form-link {
+  display: block;
+  color: #263c9b;
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-family: "Noto+Serif+Georgian", serif;
+  font-weight: 200;
+}
+.form-items .form-link:hover {
+  text-decoration: underline;
+}
+.form-items .updatePost-button,
+.form-items .deletePost-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.form-items .updatePost-button {
+  background-color: #af8461;
+  color: #fff;
+  margin-right: 10px;
+}
+.form-items .updatePost-button:hover {
+  background-color: #a47a57;
+}
+.form-items .deletePost-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+.form-items .deletePost-button:hover {
+  background-color: #c0392b;
+}
+.form-items .buttons-container {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }/*# sourceMappingURL=main.css.map */

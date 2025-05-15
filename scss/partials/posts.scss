@@ -1,0 +1,111 @@
+.blogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.form-items {
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  .form-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+
+  .form-title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-family: $mainFontFamily;
+    font-weight: 600;
+  }
+
+  .form-author {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+    font-family: $mainFontFamily;
+    font-weight: 200;
+  }
+
+  .form-article {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    font-family: $mainFamilyFont;
+    font-weight: 300;
+  }
+
+  .form-link {
+    display: block;
+    color: #263c9b;
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-family: $mainFamilyFont;
+    font-weight:200;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .updatePost-button,
+  .deletePost-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: $mainFontFamily;
+    font-weight: 400;
+  }
+
+  .updatePost-button {
+    background-color: #af8461;
+    color: #fff;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: #a47a57;
+    }
+  }
+
+  .deletePost-button {
+    background-color: #e74c3c;
+    color: #fff;
+
+    &:hover {
+      background-color: #c0392b;
+    }
+  }
+
+  .buttons-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+}
