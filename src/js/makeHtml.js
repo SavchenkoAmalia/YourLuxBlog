@@ -7,7 +7,7 @@ export function makehtml(data){
                 <h1 class="form-title">${item.title}</h1>
                 <p class="form-author">${item.author}</p>
                 <p class="form-article">${item.article.text}</p>
-                <a class="form-link">${item.link}</a>
+                <a  target="_blank" href="${item.link}" class="form-link">посилання на рецепт</a>
                 <div class="buttons-container">
                 <button id="${item.id}" class="updatePost-button">ОНОВИТИ</button>
                 <button class="delete" id="${item.id}">ВИДАЛИТИ</button>

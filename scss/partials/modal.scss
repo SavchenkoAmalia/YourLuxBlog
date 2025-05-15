@@ -9,7 +9,7 @@
   align-items: center;
   z-index: 9999;
   display: none;
-  overflow-y: auto; /* Додаємо можливість скролу */
+  overflow-y: auto;
   
   .create-home__window {
     position: relative;
@@ -18,8 +18,8 @@
     background: white;
     border-radius: 10px;
     padding: 20px;
-    max-height: 90vh; /* Обмеження висоти модалки */
-    overflow-y: auto; /* Можливість скролити контент всередині */
+    max-height: 90vh;
+    overflow-y: auto;
     box-sizing: border-box;
   }
 
@@ -89,7 +89,7 @@
     border: 2px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
-    resize: vertical; /* Дозволяє змінювати висоту */
+    resize: vertical;
     transition: border-color 0.3s;
     margin-top: 5px;
     box-sizing: border-box;
@@ -100,7 +100,7 @@
     }
   }
 
-  button[type="submit"] {
+  .submitBtn{
     padding: 12px 20px;
     background-color: #af8461;
     color: white;
@@ -111,6 +111,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 15px;
+  
 
     &:hover {
       background-color: #8a674c;

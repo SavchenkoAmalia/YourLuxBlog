@@ -21,6 +21,8 @@
   box-sizing: border-box;
   margin-top: 30px;
   position: relative;
+  padding-bottom: 80px;
+  min-height: 500px;
 
   &:hover {
     transform: translateY(-2px);
@@ -57,6 +59,9 @@
     line-height: 1.5;
     font-family: $mainFamilyFont;
     font-weight: 300;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   .form-link {
