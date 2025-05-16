@@ -233,6 +233,11 @@ legend {
   font-weight: 300;
   color: white;
   margin-right: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home__create .create-home__container .create-home__buttons .create-home__add:hover {
+  background-color: #a47a57;
 }
 .home__create .create-home__container .create-home__buttons .create-home__all {
   background-color: #af8461;
@@ -241,6 +246,11 @@ legend {
   border-radius: 38px;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home__create .create-home__container .create-home__buttons .create-home__all:hover {
+  background-color: #a47a57;
 }
 
 .home__base .base-home__container {
@@ -272,6 +282,12 @@ legend {
   color: #af8461;
   border: 2px solid #af8461;
   font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home__base .base-home__container .base-home__button:hover {
+  color: #977254;
+  border: 2px solid #977254;
 }
 
 .create-home__modal {
@@ -383,14 +399,19 @@ legend {
   background-color: #8a674c;
 }
 
+.home__all .all-home {
+  max-height: 100vh;
+  position: relative;
+}
 .home__all .all-home__container {
   background-color: #423b33;
-  padding: 0px 70px 70px 70px;
+  padding: 0 70px 70px 70px;
   display: flex;
   flex-direction: column;
   min-height: 700px;
   height: auto;
   overflow: visible;
+  position: relative;
 }
 .home__all .all-home__container .all-home__form {
   display: flex;
@@ -423,12 +444,16 @@ legend {
   padding: 15px 30px;
   border-radius: 27px;
   font-family: "Oswald", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: white;
   width: 50%;
   cursor: pointer;
   text-align: center;
   margin-bottom: 50px;
+  transition: background-color 0.3s ease;
+}
+.home__all .all-home__container .all-home__search:hover {
+  background-color: #a47a57;
 }
 .home__all .all-home__container .all-home__homes {
   display: flex;
@@ -455,6 +480,29 @@ legend {
   max-width: 200px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.home__all .all-home__container .all-home__back:hover {
+  color: #977254;
+  border: 2px solid #977254;
+}
+.home__all .all-home__container .all-home__scrollToTopBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #af8461;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+.home__all .all-home__container .all-home__scrollToTopBtn:hover {
+  background-color: #a47a57;
 }
 .blogList {
   display: flex;

@@ -40,6 +40,11 @@
           font-weight: 300;
           color: white;
           margin-right: 25px;
+           cursor: pointer;
+        transition: all 0.3s ease;
+           &:hover {
+          background-color: #a47a57;
+        }
         }
 
         .create-home__all {
@@ -49,6 +54,11 @@
           border-radius: 38px;
           font-family: $mainFontFamily;
           font-weight: 300;
+           cursor: pointer;
+        transition: all 0.3s ease;
+              &:hover {
+          background-color: #a47a57;
+        }
         }
       }
     }

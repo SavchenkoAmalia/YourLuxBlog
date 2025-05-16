@@ -177,3 +177,5 @@ function schowSections() {
 button1.addEventListener('click', closeSections);
 button2.addEventListener('click', closeSections);
 buutonBack.addEventListener('click', schowSections);
+
+//! scrollBtn

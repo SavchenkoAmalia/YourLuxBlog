@@ -35,6 +35,12 @@
         color: #af8461;
         border: 2px solid #af8461;
         font-size: 16px;
+         cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #977254;
+        border: 2px solid #977254;
+        }
       }
     }
   }
