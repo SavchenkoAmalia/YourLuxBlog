@@ -7,7 +7,9 @@
       padding: 0px 70px 70px 70px;
       display: flex;
       flex-direction: column;
-      height: 600px;
+      min-height: 700px;
+       height: auto;
+      overflow: visible;
 
     .all-home__form {
   display: flex;
@@ -38,7 +40,7 @@
   background-color: white;
 }
 
-button {
+.all-home__search {
   background-color: #af8461;
   padding: 15px 30px;
   border-radius: 27px;

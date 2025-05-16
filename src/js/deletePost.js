@@ -1,22 +1,23 @@
 import axios from "axios";
-import { getBlog } from "./getBlogs.js";
+import { getBlog } from "./getBlogs";
 
-const blogList = document.querySelector(".blogList");
+const blogList = document.querySelector(".blogList")
+const blogListSecondary = document.querySelector(".blogListSecondary")
 
-if (blogList) {
-  blogList.addEventListener("click", deletePost);
-}
+blogListSecondary.addEventListener("click",deletePost)
+blogList.addEventListener("click",deletePost)
+
 
 async function deletePost(event) {
-  if (event.target.classList.contains("delete")) {
-    console.log('click an mouse')
-    const id = event.target.id;
-
+    if (event.target.classList.contains("delete"))
+     {
+    const delet = event.target.id
     try {
-      await axios.delete(`http://localhost:3000/blogs/${id}`);
-      getBlog(); // оновити список
-    } catch (error) {
-      console.error("Помилка видалення:", error);
+            const { data } = await axios.delete(`http://localhost:3000/blogs/${delet}`);
+            getBlog()
+        } catch (error) {
+            console.error(error);
+            
+        }
     }
-  }
 }

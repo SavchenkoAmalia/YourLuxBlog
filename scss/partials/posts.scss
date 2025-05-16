@@ -7,6 +7,16 @@
   width: 100%;
 }
 
+.blogListSecondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+
 .form-items {
   list-style: none;
   background-color: #ffffff;

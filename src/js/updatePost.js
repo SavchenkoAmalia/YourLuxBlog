@@ -11,7 +11,7 @@ export function addEditEvents() {
       try {
         const response = await axios.get(`http://localhost:3000/blogs/${postId}`);
         const post = response.data;
-        openModalForEdit(post); // відкриваємо модалку з даними поста
+        openModalForEdit(post);
       } catch (error) {
         console.error('Помилка при завантаженні поста:', error);
       }

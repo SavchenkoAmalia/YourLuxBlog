@@ -6,11 +6,11 @@ const modal = document.querySelector('.create-home__modal');
 const closeBtn = document.querySelector('.create-home__close');
 const form = document.querySelector('form');
 const blogList = document.querySelector('.blogList');
+const blogListSecondary = document.querySelector('.blogListSecondary');
 
 let isUpdating = false;
 let updateId = null;
 
-// Відкриття модалки
 openBtn.addEventListener('click', () => {
   isUpdating = false;
   updateId = null;
@@ -18,12 +18,10 @@ openBtn.addEventListener('click', () => {
   openModal();
 });
 
-// Закриття модалки
 closeBtn.addEventListener('click', () => {
   closeModal();
 });
 
-// Обробка натискання на "редагувати"
 blogList.addEventListener('click', async (event) => {
   if (event.target.classList.contains('updatePost-button')) {
     isUpdating = true;
@@ -45,11 +43,32 @@ blogList.addEventListener('click', async (event) => {
   }
 });
 
-// Встановлення лише одного обробника кнопки submit
+
+blogListSecondary.addEventListener('click', async (event) => {
+  if (event.target.classList.contains('updatePost-button')) {
+    isUpdating = true;
+    updateId = event.target.id;
+
+    try {
+      const { data } = await axios.get(`http://localhost:3000/blogs/${updateId}`);
+
+      document.getElementById('image').value = data.image;
+      document.getElementById('title').value = data.title;
+      document.getElementById('author').value = data.author;
+      document.getElementById('mainContent').value = data.article.text;
+      document.getElementById('link').value = data.link;
+
+      openModal();
+    } catch (error) {
+      console.error('Помилка завантаження поста для оновлення:', error);
+    }
+  }
+});
+
 function setupSubmitHandler() {
   const oldButton = document.querySelector('.submitBtn');
-  const newButton = oldButton.cloneNode(true); // клон без слухачів
-  oldButton.replaceWith(newButton); // заміна старої кнопки
+  const newButton = oldButton.cloneNode(true); 
+  oldButton.replaceWith(newButton);
 
   newButton.addEventListener('click', async () => {
     const image = document.getElementById('image').value.trim();
@@ -89,7 +108,7 @@ function setupSubmitHandler() {
   });
 }
 
-// Після завантаження сторінки - встановити обробник
+
 setupSubmitHandler();
 
 function validateInputs(title, author, mainContent, link, image) {

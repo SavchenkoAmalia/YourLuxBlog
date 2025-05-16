@@ -388,7 +388,9 @@ legend {
   padding: 0px 70px 70px 70px;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  min-height: 700px;
+  height: auto;
+  overflow: visible;
 }
 .home__all .all-home__container .all-home__form {
   display: flex;
@@ -416,7 +418,7 @@ legend {
   margin-bottom: 15px;
   background-color: white;
 }
-.home__all .all-home__container button {
+.home__all .all-home__container .all-home__search {
   background-color: #af8461;
   padding: 15px 30px;
   border-radius: 27px;
@@ -455,6 +457,15 @@ legend {
   transition: all 0.3s ease;
 }
 .blogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.blogListSecondary {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
